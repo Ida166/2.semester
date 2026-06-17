@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pasta Carbonara - Bella Vista</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Bella Vista Restaurant</h1>
+    <p class="subtitle">Pasta Carbonara Details</p>
+  </header>
+
+  <main class="container">
+
+    <!-- DISH INFO -->
+    <section class="card">
+      <h2>Pasta Carbonara</h2>
+      <p><strong>Price:</strong> €14.00</p>
+      <p>Creamy pasta with pancetta, parmesan and black pepper.</p>
+    </section>
+
+    <!-- ADD NEW ITEM -->
+    <section class="card">
+      <h3>Add a Dish</h3>
+
+      <div class="form">
+        <input id="name-input" type="text" placeholder="Dish name">
+        <input id="price-input" type="number" placeholder="Price">
+        <button id="add-btn">Add Dish</button>
+      </div>
+    </section>
+
+    <!-- LOAD BUTTON -->
+    <section class="card">
+      <button id="load-related" class="primary-btn">
+        Load Dishes
+      </button>
+
+      <div id="output-box"></div>
+    </section>
+
+    <!-- BACK BUTTON -->
+    <section class="card">
+      <button id="back-btn" class="back-btn">
+        ⬅ Back to Menu
+      </button>
+    </section>
+
+  </main>
+
+  <script src="pasta-carbonara.js"></script>
+</body>
+</html>

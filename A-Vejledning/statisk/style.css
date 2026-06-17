@@ -1,0 +1,236 @@
+nav a {
+    color: rgb(66, 63, 63);
+    margin: 0 10px;
+    text-decoration: none;
+    /* display: block; On top of each other(remove: on line) */
+}
+
+header {
+    background: #b5a9a9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+
+}
+
+.FoodPicture {
+  width: 100px;
+  margin: 5px auto; /* centers it horizontally */
+  cursor: pointer;
+}
+
+.description h5,
+.description h4,
+.description p {
+    display: inline;
+    margin: 0;
+}
+
+.success {
+    color: green;
+}
+
+.no-luck {
+    color: grey;
+}
+
+#special-box {
+    display: none;   /* hides it initially */
+    background-color: rgb(111, 111, 111);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 450px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(21, 7, 71, 0.2); 
+}
+
+
+#dishTable {
+    border: 1px solid black;
+}
+
+#dishTable th,
+#dishTable td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 400px;        /*limits width */
+    margin: 20 px; 
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Form page styling*/
+.card {
+  background-color: #eee;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+#submitForm:hover {
+  background-color: rgb(105, 156, 105);
+}
+
+.container-food {
+    display: block;
+    margin: 5px auto; /*centers it horizontally, 20px adds space above and below*/
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+}
+
+
+
+/*Cabonara page*/
+
+/* --------------------------
+   GENERAL LAYOUT
+---------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* --------------------------
+   HEADER
+---------------------------*/
+.header {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* --------------------------
+   CARD SECTIONS
+---------------------------*/
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* --------------------------
+   INPUT FORM
+---------------------------*/
+.form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* --------------------------
+   BUTTON STYLES
+---------------------------*/
+.primary-btn {
+  background: #27ae60;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #219150;
+}
+
+.back-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.back-btn:hover {
+  background: #c0392b;
+}
+
+/* --------------------------
+   OUTPUT BOX
+---------------------------*/
+#output-box {
+  display: none;
+  margin-top: 15px;
+}
+
+#output-box p {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#output-box p:hover {
+  background: #f0f0f0;
+}
+
+
+
+/*Countdown box*/
+#countdown-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 120px;
+  height: 120px;
+
+  background-color: #333;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#countdown-text {
+  margin: 0;
+}

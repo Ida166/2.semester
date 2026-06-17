@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservation Form - Bella Vista Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Bella Vista Restaurant</h1>
+
+    <!-- Navigation back to menu -->
+    <nav>
+      <a href="index.html">Back to Menu</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- FORM SECTION -->
+    <section>
+      <h2>Table Reservation Form</h2>
+
+      <form id="reservationForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <br><br>
+
+        <input type="email" id="email" placeholder="Your Email" required>
+        <br><br>
+
+        <input type="number" id="guests" placeholder="Number of Guests" required>
+        <br><br>
+
+        <button id="submitForm" type="submit">Submit Reservation</button>
+      </form>
+    </section>
+
+    <!-- OUTPUT SECTION -->
+    <section>
+      <h2>Saved Reservations</h2>
+      <div id="output"></div>
+    </section>
+
+  </main>
+
+  <!-- JS FILE -->
+  <script src="formPage.js"></script>
+
+</body>
+</html>
