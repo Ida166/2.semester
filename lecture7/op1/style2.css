@@ -1,0 +1,39 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#site-header{
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#main-content {
+    background-color: white;
+    Padding: 40px;
+    flex: 1; /*makes it full page length*/
+    /* text-align: center; allignes the text in the center of the page (left and right acordingly if that is wanted)*/
+}
+
+#site-footer{
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#go-to-admin-page {
+    background-color: #ebeaea; /* blå*/
+  color: rgb(10, 10, 10); /* Tekstfarve */
+  border: none; /* 2px solid rgb(244, 217, 13); */
+  padding: 10px 20px;
+  border-radius: 5px; /* Dette runder hjørnerne */
+  cursor: pointer;
+  text-decoration: none;
+}
