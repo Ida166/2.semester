@@ -1,0 +1,11 @@
+.balloon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#balloon {
+  font-size: 50px;
+}

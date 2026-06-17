@@ -1,0 +1,27 @@
+/* Default actions
+- Many events have a default action associated with them. 
+  -If you click a link, you will be taken to the link’s target. 
+  -If you press the down arrow, the browser will scroll the page down. 
+  -If you right-click, you’ll get a context menu.
+
+- For most types of events, the JavaScript event handlers are called before the default behavior takes place.
+- If the handler doesn’t want this normal behavior to happen, it can call the preventDefault method on the event object*/
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Default Actions</title>
+</head>
+<body>
+    <h1>My Page</h1>
+    <a href="https://developer.mozilla.org/">MDN</a>
+    <script>
+        let link = document.querySelector("a");
+        link.addEventListener("click", event => {
+            console.log("Nope.");
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html> 

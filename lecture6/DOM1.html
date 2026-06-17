@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Demo</title>
+</head>
+<body>
+    <h1>My Page</h1>
+    <p>New text</p>
+    <button>Click me</button>
+    <p>No handler here.</p>
+    <script> 
+        let button = document.querySelector("button");
+        button.addEventListener("click", () => {
+            console.log("Button clicked.");
+        } );
+    </script>
+    <button id="myButton">Click me!</button>
+    <script>
+        let button2 = document.querySelector("#myButton");
+        button2.addEventListener("mousedown", event => {
+            if (event.button == 0){
+                console.log("left button");
+            }if (event.button == 1){
+                console.log("Middle button");
+            }else if (event.button == 2){
+                console.log("Right button");
+            }            
+        });
+    </script>
+    <script src="DOM1.js"></script>
+</body>
+</html> 

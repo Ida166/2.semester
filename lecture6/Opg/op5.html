@@ -1,0 +1,36 @@
+<!--(a): Add an eventListener for the "keydown" event. 
+
+Have the page display "You are pressing Up" when the user presses the up arrow key.
+
+Similarly, have the page display "You are pressing Down" when the user presses the down arrow key.
+
+(b): Add code so that when the user doesn't press either the up or down keys, the page displays "Nothing pressed". Use the "keyup" event for this.-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 5</title>
+</head>
+<body>
+<p id="output">Nothing pressed</p>
+<script>
+   
+   let output = document.getElementById("output");
+   window.addEventListener("keydown", event => {
+    if(event.key == "ArrowUp"){
+        output.textContent = "You are pressing Up";
+    }
+    else if(event.key == "ArrowDown"){
+        output.textContent = "You are pressing Down";
+    }
+
+   window.addEventListener("keyup", event => {
+        if(event.key == "ArrowUp" || event.key == "ArrowDown") {
+            output.textContent = "Nothing pressed";
+        }
+   })
+});
+</script>
+</body>
+</html>

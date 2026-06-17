@@ -1,0 +1,23 @@
+<!--Key events
+- When a key on the keyboard is pressed, your browser fires a "keydown" event. 
+- When it is released, you get a "keyup" event.
+- The example looks at the key property of the event object to see which key the event is about.
+- This property holds a string that, for most keys, corresponds to the thing that pressing that key would type.
+   - For special keys such as enter, it holds a string that names the key ("Enter", in this case). 
+   - If you hold shift while pressing a key, that might also influence the name of the key—"v" becomes "V", and "1" may become 
+     "!", if that is what pressing shift-1 produces on your keyboard.
+-->
+
+<p>This page turns violet when you hold the V key</p>
+<script>
+    window.addEventListener("keydown", event => {
+        if(event.key == "v"){
+            document.body.style.background = "violet";
+        }
+    });
+    window.addEventListener("keyup", event => {
+        if(event.key == "v"){
+            document.body.style.background = "";
+        }
+    });
+</script>
